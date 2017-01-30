@@ -1,0 +1,203 @@
+
+
+.contact-info {
+	@include media (100px) {
+		padding: 4%;
+	}
+	@include media (768px) {
+		padding: 2% 1%;
+		text-align: center;
+	}
+	
+
+	a {
+		color: $body-text;
+	}
+
+	i {
+
+		@include media (100px) {
+			font-size: 20px;
+			padding-right: 10px;
+			padding-left: 15px;
+		}
+		
+		@include media (768px) {
+			font-size: 22px;
+			padding-left: 20px;			
+		}
+
+		@include media (1024px) {
+			font-size: 36px;
+			padding-left: 44px;
+		}
+	}
+
+	p {
+
+		@include media (100px) {
+			font-size: 15px;
+		}
+
+		@include media (768px) {
+			float: left;
+			font-size: 16px;
+		}	
+		@include media(1024px) {
+			font-size: 22px
+		}	
+	}
+}
+
+.map-form-wrapper {
+	width: 100%;	
+	// margin-bottom: 100px;
+	@include clearfix;
+
+	@include media (100px) {
+		// height: 400px;
+    	// overflow: hidden;
+		
+	}
+	@include media (768px) {
+		height: 500px;
+	}
+
+	h3 {
+		
+		text-align: left;
+		padding-left: 10px;
+		margin: 20px 0;
+
+		@include media (100px) {
+			font-size: 24px;
+			
+		}
+
+		@include media (768px) {
+			font-size: 30px;
+		}
+	}
+}
+
+.map {
+
+	float: left;
+	@include clearfix;
+	height: 100%;
+	@include media (100px) {
+		width: 100%;
+		height: 350px;
+		overflow: hidden;
+	}
+
+	@include media (768px) {
+		width: 50%;
+		height: auto;
+	}
+
+	
+
+}
+
+.contact-form {
+	background-color: #EEEEEE;
+	font-weight: 300;
+	float: left;
+	@include clearfix;
+	height: 100%;
+	text-align: center;
+
+	@include media (100px) {
+		width: 100%;
+		// padding: 0 3%;
+	}
+
+	@include media (768px) {
+		width: 50%;
+		padding: 0 2%;
+	}
+
+
+		@include media (1024px) {
+			padding: 0 3%;
+		}
+
+	.form-half {
+
+		@include media (100px) {
+			width: 100%;
+			
+		}
+
+		@include media (768px) {
+			width: 50%;
+			float: left;
+		}
+
+		
+
+		p { 
+			margin:0;
+			line-height: 0.8;
+		
+		 }
+
+
+	}
+}
+
+.wpcf7-form input,
+.wpcf7-form textarea {
+   
+    border: 1px solid darken(#ddd, 10%);
+    background-color: transparent;
+    color: darken (#222, 10%);
+    width: 95%;
+    font-weight: 300;
+
+    @include media (100px) {
+    	 margin-bottom: 0px;
+    	
+    }
+
+    @include media (768px) {
+    	 margin-bottom: 15px;
+    	 margin-top: 0px;
+    }
+
+    }
+
+    .wpcf7-form input {
+
+    	width: 90%;
+
+    }
+
+    .wpcf7-form-control-wrap  {
+    	size: 30px;
+    }
+
+   
+
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea
+{
+    
+    // width: 90%;
+}
+
+input[type="submit"]{
+	width: 30%;
+	// text-align: left;
+	&:hover {
+		background-color: $body-text;
+		color: white;
+	}
+}
+
+.wpcf7-response-output .wpcf7-display-none .wpcf7-mail-sent-ok {
+	margin: 0;
+}

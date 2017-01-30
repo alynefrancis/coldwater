@@ -1,0 +1,133 @@
+.blog-sidebar{
+	width: 32%;
+	float: left;
+}
+.full-blog-post {
+	@include span-columns(12);
+	padding: 4%;
+}
+
+.full-blog-item {
+	padding-right: 2%;
+		h4 {
+			font-size: em(26px);
+		}
+		h5 {
+			text-align: left;
+				@media only screen and (min-width : 320px){
+			 		font-size: em(14px)
+				}
+				@media only screen and (min-width : 600px){
+			 		font-size: em(16px)
+				}
+
+		}
+		h5>span a {
+			font-size: 14px;
+			color: $links;
+			text-transform: uppercase;
+			text-align: left;
+		}
+		a {
+			text-decoration: none;
+			color: $links;
+			.fa {
+			  color: $links;
+			  padding-left: 8px;
+			}
+	
+		}
+		.blog-text p {
+			color: $body-text;
+		}
+
+		.full-blog-image img {
+			width: 100%;
+		}
+
+//this became backwards with media queries
+// didn't bother to reorganize 
+	@media only screen and (min-width : 320px){
+		@include span-columns(12 of 12);  
+		h1 {
+			font-size: em(28px);
+			text-align: left;
+			margin: inherit;
+		}
+		p {
+			font-size: em(15px);
+		}
+		h5>span {
+			font-size: em(14px);			
+		}
+	}
+	@media only screen and (min-width : 600px){
+		p {
+			font-size: em(16px);
+		}
+	}
+	@media only screen and (min-width : 768px) {
+		@include span-columns(8);
+
+		h1 {
+			font-size: em(36px);
+		}
+
+		h5>span {
+			font-size: em(16px);			
+		}
+		.blog-text {
+			padding-top: 50px;
+		  // padding-left: 2%;
+		  // padding-right: 2%;
+		}
+
+
+	}
+	@media only screen and (min-width : 1024px) {
+		h1 {
+			font-size: em(40px);
+		}
+		.blog-text p {
+			font-size: em(17px);
+		}
+	}   
+}	
+
+.nav-stories {
+	text-align: center;	
+
+	@media only screen and (min-width : 320px) {
+		.nav-previous {
+			display: none;
+		}		
+		.nav-next {
+			display: none;
+		}
+	}
+	@media only screen and (min-width : 600px) {
+		.nav-previous-small {
+			display: none
+		}
+		.nav-next-small {
+			display: none;
+		}
+		.nav-previous {
+			display: inherit;
+		}
+		.nav-next {
+			display: inherit;
+		}
+	}
+
+}
+.widget.searchsubmit{
+	display: none !important;
+
+}	
+
+.widget form#searchform {
+	// text-align: center;
+}
+
+

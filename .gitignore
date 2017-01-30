@@ -1,0 +1,15 @@
+node_modules
+inc
+.sass-cache
+img
+fonts
+uploads
+scss/core
+scss/libraries
+assets/js/Snap.js-develop
+.DS_Store
+*.pdf
+*.zip
+*.txt
+
+

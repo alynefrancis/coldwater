@@ -1,0 +1,51 @@
+/*!
+Theme Name: coldwatercode
+Theme URI: http://coldwaterwebdesign.com
+Author: Alyne Francis
+Author URI: http://coldwaterwebdesign.com
+Description: Wordpress site for bus schedules and travel in Central America.
+Version: 1.0
+License: The MIT License (MIT)
+License URI: http://opensource.org/licenses/MIT
+Text Domain: coldwatercode-theme
+*/
+
+@import 'libraries/bourbon/bourbon.scss';
+@import 'libraries/neat/neat.scss';
+@import 'core/_normalize.scss';
+
+
+//Defining
+//@import '../fonts/_fonts.scss';
+@import 'core/_variables.scss';
+@import 'core/formsReset.scss';
+// @import 'core/_forms.scss';
+// @import 'core/_lists.scss';
+
+
+//Mixins
+// @import 'core/_breakpoints.scss';
+// @import 'core/_stickyFooter';
+// @import 'core/_typographyMixins';
+
+
+//Global Styles
+@import 'core/_typography.scss';
+@import '_base.scss';
+@import 'core/_wordpressStyles';
+@import 'core/_accessibility.scss';
+
+
+//Main Components
+@import 'parts/_sidebar.scss';
+@import 'parts/_comments.scss';
+@import 'parts/_footer.scss';
+@import 'parts/_nav.scss';
+@import 'parts/_header.scss';
+@import 'pages/_front-page.scss';
+@import 'pages/_contact.scss';
+@import 'pages/portfolio.scss';
+@import 'pages/about.scss';
+
+
+
